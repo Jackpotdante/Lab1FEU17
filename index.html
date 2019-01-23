@@ -1,42 +1,40 @@
-<html>
-<head>
-  <title>Firebase Login</title>
-  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Firebase Login CHK</title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <script src="main.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
+      
+    </head>
+    <body>
+      <div id="mainDiv">
+        <h1>Welcome</h1>
+        <div class="userInfoWrapper">
+          <div id="userIdText"></div>
+          <div id="userIMGDiv"><img id="userIMG"></div>
+        </div>
+        <div class="signOutWrap">
+          <div class="so1"><button id="signoutButton">Sign out user Git</button></div>
+        
+        </div>
+        <div id="recept">
+    
+        </div>
+        <div class="containerLoginButtons">
+          <h2>Sign in</h2>
+          <div id="gitCont">
+            <!--<button id="redirectButton">Redirect authentication</button>-->
+            <button class="loginBtn loginBtn--github">with Github</button>
+          </div>
+    
+        
+    
+          
+      </div>
+      </div>
+    
+    </body>
+    
 
-  <div id="login_div" class="main-div">
-    <h3>Firebase Web login Example</h3>
-    <input type="email" placeholder="Email..." id="email_field" />
-    <input type="password" placeholder="Password..." id="password_field" />
-
-    <button onclick="login()">Login to Account</button>
-  </div>
-
-  <div id="user_div" class="loggedin-div">
-    <h3>Welcome User</h3>
-    <p id="user_para">Welcome to Firebase web login Example. You're currently logged in.</p>
-    <button onclick="logout()">Logout</button>
-  </div>
-
-
-
-  
-<script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyBvqrA1lkNP-Se9-ZM98He7FVsg3LVnco8",
-    authDomain: "feu17loginlab.firebaseapp.com",
-    databaseURL: "https://feu17loginlab.firebaseio.com",
-    projectId: "feu17loginlab",
-    storageBucket: "feu17loginlab.appspot.com",
-    messagingSenderId: "987535431747"
-  };
-  firebase.initializeApp(config);
-</script>
-  <script src="index.js"></script>
-
-</body>
-</html>
+  </html>
